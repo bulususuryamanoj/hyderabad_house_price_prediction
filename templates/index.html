@@ -3,16 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Hyderabad House Price Prediction</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; }
-        .container { max-width: 400px; margin: 60px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
-        h2 { text-align: center; color: #333; }
-        label { display: block; margin-top: 15px; }
-        input[type="number"], select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
-        button { width: 100%; padding: 10px; margin-top: 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; font-size: 16px; }
-        .result { margin-top: 20px; text-align: center; font-weight: bold; color: #007bff; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        select, input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-size: 15px;
+            background-color: #f9fafb;
+            outline: none;
+            transition: border 0.2s, box-shadow 0.2s;
+        }
+
+        select:focus,
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 30px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(37,99,235,0.4);
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+            color: #6b7280;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>Hyderabad House Price Prediction</h2>
@@ -405,8 +475,7 @@
                 <option value="352">Yadagirigutta</option>
                 <option value="353">Yapral</option>
                 <option value="354">Yousufguda</option>
-                <option value="355">Zaheerabad</option>
-                <option value="356">financial District</option>
+                <option value="355">Financial District</option>
                 <option value="357">muthangi</option>
                 <option value="358">raidurgam</option>
                 </select>
@@ -423,6 +492,8 @@
 
             <button type="submit">Predict</button>
         </form>
-        
+          <div class="footer">
+        Powered by Machine Learning • Hyderabad Real Estate Analytics
+    </div>
 </body>
 </html>
