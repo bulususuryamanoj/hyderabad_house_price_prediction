@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 app.name = 'Hyderabad House Price Prediction'
 
-model = r"D:\python\hydhouse\multi_xgb_model"
+model = "multi_xgb_model"
 with open(model,'rb') as file:
     multi_xgb_model = pickle.load(file)
 @app.route('/')
