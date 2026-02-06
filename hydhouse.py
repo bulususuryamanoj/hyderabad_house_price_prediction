@@ -22,11 +22,11 @@ def predict():
         input_data = numpy.array([[title,location,area_insqft,building_status]])
         predictions = multi_xgb_model.predict(input_data)
         price, rate_persqft = predictions[0][0], predictions[0][1]
-        title_map_list = pd.read_csv(r"D:\python\hydhouse\title_mapping.csv")
+        title_map_list = pd.read_csv("title_mapping.csv")
         title_map = title_map_list.loc[title_map_list['code'] == title, 'category'].iloc[0]
-        building_status_list = pd.read_csv(r"D:\python\hydhouse\building_status_mapping.csv")
+        building_status_list = pd.read_csv("building_status_mapping.csv")
         building_status_re = building_status_list.loc[building_status_list['code']== building_status,'category'].iloc[0]
-        location_list = pd.read_csv(r"D:\python\hydhouse\location_mapping.csv")
+        location_list = pd.read_csv("location_mapping.csv")
         location_re = location_list.loc[location_list['code']==location,'category'].iloc[0]
 
 
